@@ -29,12 +29,6 @@ const winningCombos = [
 
 
 /*-------------------------------- Functions --------------------------------*/
-// const updateBoard = function() {
-//     squareEls.forEach((squ) => {
-//      squ.textContent = board[squ.id]
-//     })
-// }
-
 const updateBoard = function () {
   board.forEach((element, index) => {
     const square = squareEls[index];
