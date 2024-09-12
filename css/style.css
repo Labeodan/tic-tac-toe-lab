@@ -1,0 +1,78 @@
+body {
+  background-color: wheat;
+  /* Use a system font, if none are available use an available sans-sarif */
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+#container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+h1 {
+    color: darkolivegreen;
+  
+}
+
+h2 {
+    color: darkolivegreen;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 325px;
+  justify-content: center;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 60px;
+  text-align: center;
+  border: none;
+}
+
+#reset {
+  width: 50px;
+  aspect-ratio: 1/0.5;
+  margin-top: 20px;
+  background-color: darkolivegreen;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add borders selectively */
+
+/* Top row */
+.sqr:nth-child(1),
+.sqr:nth-child(2),
+.sqr:nth-child(3) {
+  border-bottom: 2px solid firebrick;
+}
+
+/* Bottom row */
+.sqr:nth-child(7),
+.sqr:nth-child(8),
+.sqr:nth-child(9) {
+  border-top: 2px solid tomato;
+}
+
+/* Left column */
+.sqr:nth-child(1),
+.sqr:nth-child(4),
+.sqr:nth-child(7) {
+  border-right: 2px solid tomato;
+}
+
+/* Middle column */
+.sqr:nth-child(2),
+.sqr:nth-child(5),
+.sqr:nth-child(8) {
+  border-right: 2px solid firebrick;
+}
