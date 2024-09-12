@@ -53,26 +53,26 @@ h2 {
 .sqr:nth-child(1),
 .sqr:nth-child(2),
 .sqr:nth-child(3) {
-  border-bottom: 2px solid firebrick;
+  border-bottom: 5px ridge firebrick;
 }
 
 /* Bottom row */
 .sqr:nth-child(7),
 .sqr:nth-child(8),
 .sqr:nth-child(9) {
-  border-top: 2px solid tomato;
+  border-top: 5px ridge tomato;
 }
 
 /* Left column */
 .sqr:nth-child(1),
 .sqr:nth-child(4),
 .sqr:nth-child(7) {
-  border-right: 2px solid tomato;
+  border-right: 5px ridge tomato;
 }
 
 /* Middle column */
 .sqr:nth-child(2),
 .sqr:nth-child(5),
 .sqr:nth-child(8) {
-  border-right: 2px solid firebrick;
+  border-right: 5px ridge firebrick;
 }
